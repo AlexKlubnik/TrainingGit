@@ -13,9 +13,15 @@ public class Solution {
             return new Pair<Integer, Integer>(null, null);
         }
 
-        //напишите тут ваш код
+        int indexOfMinimum = 0;
 
-        return new Pair<Integer, Integer>(0, 0);
+        for (int i = 0; i < array.length; i++) {
+             if (array[i]<array[indexOfMinimum]){
+                 indexOfMinimum=i;
+             }
+            }
+
+        return new Pair<Integer, Integer>(array[indexOfMinimum], indexOfMinimum);
     }
 
     public static class Pair<X, Y> {
