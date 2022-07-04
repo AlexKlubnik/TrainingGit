@@ -15,7 +15,9 @@ public class Solution {
 
         int indexOfMinimum = 0;
 
-        for (int i = 2; i < array.length; i++) {
+
+        for (int i = 1; i < array.length; i++) {
+
              if (array[i]<array[indexOfMinimum]){
                  indexOfMinimum=i;
              }
