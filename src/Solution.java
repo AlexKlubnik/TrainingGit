@@ -19,13 +19,20 @@ public class Solution {
 
         for (int i = 1; i < array.length; i++) {
 
-             if (array[i]<array[indexOfMinimum]){
-                 indexOfMinimum=i;
-             }
+            if (array[i] < array[indexOfMinimum]) {
+                indexOfMinimum = i;
             }
+        }
 
         return new Pair<Integer, Integer>(array[indexOfMinimum], indexOfMinimum);
     }
+
+   /* public static int recursionIteration(int indexOfArray, int[] array) {
+        if (indexOfArray == array.length-1) {
+            return array[indexOfArray];
+        }
+        return recursionIteration(indexOfArray+1, array);
+    }*/
 
     public static class Pair<X, Y> {
         public X x;
