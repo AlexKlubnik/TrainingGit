@@ -15,6 +15,7 @@ public class Solution {
 
         int indexOfMinimum = 0;
 
+//        adding comment here
 
         for (int i = 1; i < array.length; i++) {
 
